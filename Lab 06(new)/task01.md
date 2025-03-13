@@ -19,3 +19,6 @@ exit
 main endp
 end main
 ```
+
+# output
+![image](https://github.com/user-attachments/assets/ae70ed21-6388-4ab9-b169-a1603e1b7f2b)
