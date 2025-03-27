@@ -1,3 +1,4 @@
+```asm
 INCLUDE Irvine32.inc
 .data
 arr1 WORD 1,2,3,4,5,6,7,8,9,10
@@ -20,3 +21,5 @@ L1:
     exit                       
 main ENDP
 END main
+```
+![image](https://github.com/user-attachments/assets/20717be4-f386-47e3-ae84-c0a3340cffb2)
