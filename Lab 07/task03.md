@@ -1,6 +1,5 @@
 ```asm
 INCLUDE Irvine32.inc
-;will correct it latter
 .data
 Arr1 DWORD 1, 2, 3, 4, 5      
 Arr2 DWORD 10, 20, 30, 40, 50 
