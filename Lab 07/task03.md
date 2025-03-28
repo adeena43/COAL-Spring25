@@ -19,7 +19,7 @@ main ENDP
 SumArray1 PROC
     mov ecx, 5         
     mov esi, OFFSET Arr1 
-    xor eax, eax        
+    mov eax, 0        
 
 SumLoop1:
     add eax, [esi]      
@@ -33,7 +33,7 @@ SumArray1 ENDP
 SumArray2 PROC
     mov ecx, 5         
     mov esi, OFFSET Arr2 
-    xor eax, eax      
+    mov eax, 0      
 SumLoop2:
     add eax, [esi]      
     add esi, 4         
