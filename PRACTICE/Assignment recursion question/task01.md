@@ -25,14 +25,13 @@ RecursiveDivide PROC
     cmp eax, 5h
     jle Done
     
-    ; Recursive case
-    push ebx                 ; Save divisor (EBX) as it's caller-saved
+    ; Recursive case - no need to save EBX!
     xor edx, edx            ; Clear EDX for division
-    div ebx                 ; EAX = EAX / EBX, EDX = remainder
+    div ebx                 ; EAX = EAX / EBX (EBX remains unchanged)
     
     call RecursiveDivide     ; Recursive call
     
-    pop ebx                  ; Restore EBX
+    ; No pop needed since we didn't push
 Done:
     ret
 RecursiveDivide ENDP
